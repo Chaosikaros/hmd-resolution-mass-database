@@ -1,0 +1,4 @@
+# Preserve exact release bytes across Windows and Unix checkouts.
+# Hash-bound data, quoted evidence and source files must not be normalized.
+# -text disables line-ending conversion while retaining normal text diffs.
+* -text

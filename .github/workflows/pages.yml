@@ -1,0 +1,40 @@
+name: Deploy HRMD
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check English coverage and contribution forms
+        run: |
+          node tests/i18n.test.cjs
+          node --test tests/submission.test.cjs
+      - name: Require an explicitly configured GitHub destination
+        env:
+          EXPECTED_REPO: ${{ github.repository }}
+        run: python scripts/check_hosting.py
+      - run: python scripts/check_site.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,67 @@
+device_id,name,cluster,ppd_default,w_px,h_px,fov_default_deg,geometry_span_deg,qbase,optics,model_axis,physical_optics,tiled_lens_array
+9,Arpara VR All In One,Arpara,32.0,2560.0,2560.0,95.0,95.0,26.94736842105263,pancake,unspecified,pancake,False
+10,Asus AirVision M1,ASUS-XREAL,58.0,1920.0,1080.0,38.0,38.0,50.526315789473685,small_fov,unspecified,freeform,False
+11,Bigscreen Beyond,Bigscreen,32.0,2560.0,2560.0,97.53,97.53,26.248333845996104,pancake,horizontal,pancake,False
+12,Bigscreen Beyond 2,Bigscreen,32.0,2560.0,2560.0,108.0,108.0,23.703703703703702,pancake,horizontal,pancake,False
+15,DPVR E4C,DPVR,21.0,1832.0,1920.0,116.0,116.0,15.793103448275861,fresnel,unspecified,fresnel,False
+17,DPVR P1 Pro,DPVR,15.0,1280.0,1440.0,100.0,100.0,12.8,fresnel,unspecified,fresnel,False
+18,DPVR P1 Pro 4K,DPVR,22.0,1920.0,2160.0,100.0,100.0,19.2,fresnel,unspecified,fresnel,False
+24,Dream Glass Flow,Dream,52.0,1920.0,1080.0,43.0,43.0,44.651162790697676,small_fov,unspecified,birdbath,False
+48,Huawei Vision Glass,Huawei,53.0,1920.0,1080.0,41.0,41.0,46.829268292682926,small_fov,unspecified,birdbath,False
+61,Lenovo ThinkReality A3,Lenovo,45.0,1920.0,1080.0,47.0,47.0,40.851063829787236,small_fov,unspecified,birdbath,False
+64,Lynx R2,Lynx,24.0,2312.0,2160.0,126.0,126.00000000000001,18.349206349206348,pancake,horizontal,pancake,False
+67,Magic Leap 2,Magic,32.0,1440.0,1760.0,44.6,44.6,32.28699551569507,small_fov,horizontal,waveguide,False
+71,Meta Quest 3,Meta,25.0,2064.0,2208.0,110.0,110.00000000000001,18.763636363636362,pancake,horizontal,pancake,False
+72,Meta Quest 3S,Meta,20.0,1832.0,1920.0,96.0,96.0,19.083333333333332,fresnel,horizontal,fresnel,False
+73,Meta Quest Pro,Meta,22.0,1800.0,1920.0,108.0,107.99999999999999,16.666666666666668,pancake,horizontal,pancake,False
+74,Meta Ray-Ban Display,Meta,42.0,600.0,600.0,20.0,20.0,30.0,small_fov,unspecified,waveguide,False
+75,Microsoft HoloLens,Microsoft,47.0,1280.0,720.0,30.0,30.0,42.666666666666664,small_fov,horizontal,waveguide,False
+76,Nreal Air,ASUS-XREAL,49.0,1920.0,1080.0,46.0,40.60510372536798,47.28469635211109,small_fov,diagonal,birdbath,False
+82,Oculus Quest 2,Meta,20.0,1832.0,1920.0,96.6,96.6,18.9648033126294,fresnel,horizontal,fresnel,False
+86,Pico 4,Pico,20.6,2160.0,2160.0,105.0,104.99999999999999,20.571428571428573,pancake,unspecified,pancake,False
+87,Pico 4 Enterprise,Pico,20.6,2160.0,2160.0,105.0,104.99999999999999,20.571428571428573,pancake,unspecified,pancake,False
+88,Pico 4 Pro,Pico,20.6,2160.0,2160.0,105.0,104.99999999999999,20.571428571428573,pancake,unspecified,pancake,False
+89,Pico 4 Ultra,Pico,22.5,2160.0,2160.0,105.0,104.99999999999999,20.571428571428573,pancake,unspecified,pancake,False
+90,Pico 4 Ultra Enterprise,Pico,22.5,2160.0,2160.0,105.0,104.99999999999999,20.571428571428573,pancake,unspecified,pancake,False
+107,Pimax Crystal Light,Pimax,35.0,2880.0,2880.0,110.0,110.0,26.181818181818183,aspheric,horizontal,aspheric,False
+108,Pimax Crystal QLED,Pimax,35.0,2880.0,2880.0,115.0,115.0,25.043478260869566,aspheric,horizontal,aspheric,False
+109,"Pimax Crystal Super (50PPD, DMAS)",Pimax,50.0,3840.0,3840.0,127.0,127.0,30.236220472440944,aspheric,horizontal,aspheric,False
+110,Pimax Crystal Super 8K Micro-OLED,Pimax,53.0,3840.0,3552.0,116.0,115.99999999999999,33.10344827586207,pancake,horizontal,pancake,False
+111,Pimax Dream Air,Pimax,53.0,3840.0,3552.0,110.0,110.00000000000001,34.90909090909091,pancake,horizontal,pancake,False
+112,Pimax Dream Air SE,Pimax,33.0,2560.0,2560.0,105.0,105.0,24.38095238095238,pancake,horizontal,pancake,False
+114,Pimax Vision 8KX,Pimax,23.0,3840.0,2160.0,170.0,170.0,22.58823529411765,fresnel,horizontal,fresnel,False
+115,Play For Dream MR,Play For Dream,45.0,3840.0,3552.0,103.0,103.0,37.28155339805825,pancake,unspecified,pancake,False
+118,RayNeo Air 2,TCL-RayNeo,49.0,1920.0,1080.0,46.0,46.0,41.73913043478261,small_fov,unspecified,birdbath,False
+119,RayNeo Air 2s,TCL-RayNeo,49.0,1920.0,1080.0,46.0,46.0,41.73913043478261,small_fov,unspecified,birdbath,False
+120,RayNeo Air 3s,TCL-RayNeo,49.0,1920.0,1080.0,46.0,46.0,41.73913043478261,small_fov,unspecified,birdbath,False
+122,RayNeo GT,TCL-RayNeo,49.0,1920.0,1080.0,46.0,46.0,41.73913043478261,small_fov,unspecified,birdbath,False
+123,RayNeo GT Max,TCL-RayNeo,38.0,1920.0,1080.0,59.0,59.0,32.54237288135593,small_fov,unspecified,prism,False
+126,ROG XREAL R1,ASUS-XREAL,40.0,1920.0,1080.0,57.0,57.0,33.68421052631579,small_fov,unspecified,prism,False
+130,Rokid Max,Rokid,45.0,1920.0,1080.0,50.0,50.0,38.4,small_fov,unspecified,birdbath,False
+140,Somnium VR1,Somnium,35.0,2880.0,2880.0,130.0,130.0,22.153846153846153,aspheric,horizontal,aspheric,False
+142,Spacetop G1,Spacetop,42.0,1920.0,1080.0,50.0,44.23584753175094,43.40371230870826,small_fov,diagonal,birdbath,False
+145,TCL NXTWEAR G,TCL-RayNeo,47.0,1920.0,1080.0,47.0,47.0,40.851063829787236,small_fov,unspecified,birdbath,False
+146,TCL NXTWEAR S,TCL-RayNeo,49.0,1920.0,1080.0,45.0,45.0,42.666666666666664,small_fov,unspecified,birdbath,False
+152,Varjo Aero,Varjo,35.0,2880.0,2720.0,115.0,115.0,25.043478260869566,aspheric,horizontal,aspheric,False
+153,Varjo VR-1,Varjo,60.0,1920.0,1080.0,30.0,30.0,64.0,focus,horizontal,semi_transparent_mirror_beam_combiner,False
+154,Varjo VR-2,Varjo,60.0,1920.0,1080.0,30.0,30.0,64.0,focus,horizontal,dual_lens_refractive,False
+155,Varjo VR-2 Pro,Varjo,60.0,1920.0,1080.0,26.0,26.000000000000004,73.84615384615384,focus,horizontal,dual_lens_refractive,False
+156,Varjo VR-3,Varjo,70.0,1920.0,1920.0,27.0,27.0,71.11111111111111,focus,horizontal,non_fresnel,False
+157,Varjo XR-1,Varjo,60.0,1920.0,1080.0,26.0,26.000000000000004,73.84615384615384,focus,horizontal,semi_transparent_mirror_beam_combiner,False
+158,Varjo XR-3,Varjo,70.0,1920.0,1920.0,27.0,27.0,71.11111111111111,focus,horizontal,non_fresnel,False
+159,Varjo XR-4,Varjo,51.0,3840.0,3744.0,120.0,120.0,32.0,aspheric,horizontal,aspheric,False
+164,Viture One,Viture,55.0,1920.0,1080.0,43.0,43.0,44.651162790697676,small_fov,unspecified,birdbath,False
+165,Viture One Lite,Viture,55.0,1920.0,1080.0,43.0,43.0,44.651162790697676,small_fov,unspecified,birdbath,False
+166,Viture Pro,Viture,49.0,1920.0,1080.0,46.0,46.0,41.73913043478261,small_fov,unspecified,birdbath,False
+172,XEO BIG,XEO,45.0,3840.0,3552.0,100.0,100.0,38.4,pancake,unspecified,pancake,False
+177,Xreal Air 2,ASUS-XREAL,49.0,1920.0,1080.0,46.0,46.0,41.73913043478261,small_fov,unspecified,birdbath,False
+178,Xreal Air 2 Pro,ASUS-XREAL,49.0,1920.0,1080.0,46.0,46.0,41.73913043478261,small_fov,unspecified,birdbath,False
+179,Xreal Air 2 Ultra,ASUS-XREAL,42.0,1920.0,1080.0,52.0,52.00000000000001,36.92307692307692,small_fov,unspecified,birdbath,False
+184,YVR 1,Play For Dream,22.5,2160.0,2160.0,100.0,100.0,21.6,fresnel,unspecified,fresnel,False
+187,Rokid Max Pro,Rokid,45.0,1920.0,1200.0,50.0,50.0,38.4,small_fov,unspecified,birdbath,False
+191,TCL RayNeo X2,TCL-RayNeo,32.0,640.0,480.0,25.0,20.114311152180875,31.818141578793696,small_fov,diagonal,waveguide,False
+192,Varjo XR-4 Focal Edition,Varjo,51.0,3840.0,3744.0,120.0,120.0,32.0,aspheric,horizontal,aspheric,False
+210,Microsoft HoloLens 2,Microsoft,47.0,1440.0,936.0,43.0,43.0,33.48837209302326,small_fov,horizontal,waveguide,False
+235,Bigscreen Beyond 2e,Bigscreen,32.0,2560.0,2560.0,108.0,108.0,23.703703703703702,pancake,horizontal,pancake,False
+239,Pimax Crystal Super (QLED 50PPD),Pimax,50.0,3840.0,3840.0,127.0,127.0,30.236220472440944,aspheric,horizontal,aspheric,False
+250,Meta VR Glasses,Meta,37.0,2412.0,2288.0,70.0,70.0,34.457142857142856,pancake,horizontal,pancake,False

@@ -1,0 +1,206 @@
+device_id,name,cohort,w_px,h_px,fov_default_deg,geometry_span_deg,qbase,optics,model_axis,physical_optics,tiled_lens_array,expected_ppd
+1,Acer AH101,main,1440.0,1440.0,95.0,95.0,15.157894736842104,fresnel,unspecified,fresnel,False,17.36842105263158
+2,Acer AR Vision GR0,main,1920.0,1080.0,40.009757392557496,35.20967355750786,54.53046864703444,small_fov,diagonal,birdbath,False,54.56983284335126
+3,Acer OJO 500,main,1440.0,1440.0,100.0,100.0,14.4,fresnel,unspecified,hybrid_fresnel,False,16.500000000000004
+4,AjnaLens AjnaXR,main,1600.0,1600.0,108.0,88.44659632783706,18.090012125163344,pancake,diagonal,pancake,False,23.660984717341677
+5,AjnaXR Enterprise Edition,main,2280.0,2280.0,108.0,88.44659632783706,25.778267278357763,pancake,diagonal,pancake,False,33.71690322221188
+6,Apple Vision Pro,main,3660.0,3200.0,100.0,100.0,36.6,pancake,unspecified,pancake,False,42.890625
+7,Apple Vision Pro M5,main,3660.0,3200.0,100.0,100.0,36.6,pancake,horizontal,pancake,False,47.87128027681661
+8,Arpara VR,main,2560.0,2560.0,95.0,95.0,26.94736842105263,pancake,unspecified,pancake,False,31.57894736842105
+13,Dell Visor,main,1440.0,1440.0,110,110.0,13.090909090909092,fresnel,unspecified,fresnel,False,15.000000000000004
+14,DPVR E4,main,1832.0,1920.0,116,116.0,15.793103448275861,fresnel,unspecified,fresnel,False,18.096264367816094
+16,DPVR P1,main,1280,1440,100,76.74140365980274,16.679392595870198,fresnel,diagonal,fresnel,False,17.48058612667619
+19,DPVR P1 Ultra 4K,main,1920,2160,90,67.19725146981769,28.572597211991432,fresnel,diagonal,fresnel,False,29.94508004750194
+20,DPVR P2,main,1832,1920,100,100.0,18.32,fresnel,unspecified,fresnel,False,20.99166666666667
+21,Dream Glass,main,1280,880,90,78.97990647182503,16.206653782967216,small_fov,diagonal,free_space_combiner,False,17.10568607638643
+22,Dream Glass 4K,main,1920,1080,90,82.1492203076493,23.372102532557083,small_fov,diagonal,semi_reflective_combiner,False,24.25917525572111
+23,Dream Glass 4K Plus,main,1920,1080,90,90.0,21.333333333333332,small_fov,unspecified,semi_reflective_combiner,False,24.844444444444445
+25,Epson Moverio BT-300,main,1280,720,23,20.11079125075185,63.647421130292265,small_fov,diagonal,freeform,False,63.28480501492464
+26,Epson Moverio BT-30C,main,1280,720,23,20.11079125075185,63.647421130292265,small_fov,diagonal,freeform,False,63.28480501492464
+27,Epson Moverio BT-350,main,1280,720,23,20.11079125075185,63.647421130292265,small_fov,diagonal,freeform,False,63.28480501492464
+28,Epson Moverio BT-35E,main,1280,720,23,20.11079125075185,63.647421130292265,small_fov,diagonal,freeform,False,63.28480501492464
+29,Epson Moverio BT-40,main,1920,1080,34,29.841513160764773,64.33990091777218,small_fov,diagonal,prism,False,64.21546391220295
+30,Epson Moverio BT-45C,main,1920,1080,34,29.841513160764773,64.33990091777218,small_fov,diagonal,freeform,False,64.21546391220295
+31,Fujitsu FMVHDS1,main,1440,1440,90,90.0,16.0,fresnel,unspecified,fresnel,False,18.333333333333336
+32,HP Reverb,main,2160,2160,114,94.87120294238831,22.767709621134312,fresnel,diagonal,fresnel,False,23.86135506145081
+33,HP Reverb G2,main,2160,2160,114,114.0,18.94736842105263,fresnel,unspecified,fresnel,False,21.710526315789476
+34,HP Reverb G2 Omnicept Edition,main,2160,2160,114,114.0,18.94736842105263,fresnel,unspecified,fresnel,False,21.710526315789476
+35,HP VR1000,main,1440,1440,95,95.0,15.157894736842104,fresnel,horizontal,hybrid_fresnel_aspheric,False,15.886003217651114
+36,HTC Vive,main,1080,1200,110,110.0,9.818181818181818,fresnel,unspecified,fresnel,False,11.250000000000002
+37,HTC Vive Cosmos,main,1440,1700,110,110.0,13.090909090909092,fresnel,unspecified,fresnel,False,15.000000000000004
+38,HTC Vive Cosmos Elite,main,1440,1700,110,110.0,13.090909090909092,fresnel,unspecified,fresnel,False,15.000000000000004
+39,HTC Vive Flow,main,1600,1600,100,100.0,16.0,pancake,unspecified,pancake,False,18.75
+40,HTC Vive Focus,main,1440,1600,110,110.0,13.090909090909092,fresnel,unspecified,fresnel,False,15.000000000000004
+41,HTC Vive Focus 3,main,2448,2448,120,120.0,20.4,fresnel,horizontal,fresnel,False,21.37991266375546
+42,HTC Vive Focus Plus,main,1440,1600,110,110.0,13.090909090909092,fresnel,unspecified,fresnel,False,15.000000000000004
+43,HTC Vive Focus Vision,main,2448,2448,120,120.0,20.4,fresnel,unspecified,fresnel,False,23.375
+44,HTC Vive Pro,main,1440,1600,110,110.0,13.090909090909092,fresnel,unspecified,fresnel,False,15.000000000000004
+45,HTC Vive Pro 2,main,2448,2448,120,120.0,20.4,fresnel,horizontal,fresnel,False,21.37991266375546
+46,HTC Vive Pro Eye,main,1440,1600,110,110.0,13.090909090909092,fresnel,unspecified,fresnel,False,15.000000000000004
+47,HTC Vive XR Elite,main,1920,1920,110,110.0,17.454545454545453,pancake,unspecified,pancake,False,20.454545454545453
+49,Huawei VR Glass,main,1600,1600,90,90.0,17.77777777777778,pancake,unspecified,pancake,False,20.833333333333336
+50,Huawei VR Glass 6DoF,main,1600,1600,90,90.0,17.77777777777778,pancake,unspecified,pancake,False,20.833333333333336
+51,iQIYI Qiyu 3,main,2160,2160,96,96.0,22.5,fresnel,unspecified,fresnel,False,25.781250000000004
+52,iQIYI Qiyu Dream,main,1280,1440,93,93.0,13.763440860215054,aspheric,unspecified,aspheric,False,21.744324970131423
+53,iQIYI Qiyu Dream Pro,main,1832,1920,93,93.0,19.698924731182796,aspheric,unspecified,aspheric,False,31.121565113500598
+54,iQIYI Qiyu MIX,main,1832,1920,93,93.0,19.698924731182796,aspheric,unspecified,aspheric,False,31.121565113500598
+56,Lenovo Explorer,main,1440,1440,97,97.0,14.845360824742269,fresnel,horizontal,fresnel,False,15.558456759555217
+57,Lenovo Legion Glasses,main,1920,1080,38,38.0,50.526315789473685,small_fov,unspecified,freeform,False,58.84210526315789
+58,Lenovo Legion Glasses 2,main,1920,1080,43.5,43.5,44.13793103448276,small_fov,unspecified,birdbath,False,51.40229885057471
+59,Lenovo Mirage Solo,main,1280,1440,110,110.0,11.636363636363637,fresnel,unspecified,fresnel,False,13.333333333333336
+60,Lenovo Mirage VR S3,main,1920,2160,101,101.0,19.00990099009901,fresnel,unspecified,fresnel,False,21.782178217821784
+62,Lenovo ThinkReality VRX,main,2280,2280,95,95.0,24.0,pancake,unspecified,pancake,False,28.125
+63,LG 360 VR,main,960,720,80,80.0,12.0,small_fov,horizontal,adjustable_lens_eyepieces,False,11.893333333333333
+65,MAD Gaze Glow Plus,main,1920,1080,53,46.97485988015452,40.87292660155742,small_fov,diagonal,birdbath,False,41.19482590594151
+66,Magic Leap 1,main,1280,960,40,40.0,32.0,small_fov,horizontal,waveguide,False,31.715555555555554
+68,Medion Erazer X1000,main,1440,1440,105,105.0,13.714285714285714,fresnel,unspecified,fresnel,False,15.714285714285715
+69,MemoMind One,main,640,350,25,25.0,25.6,small_fov,unspecified,waveguide,False,29.616397032081498
+70,Meta 2,main,1280,1440,90,67.19725146981769,19.04839814132762,small_fov,diagonal,off_axis_half_silvered_mirror,False,21.21699232450909
+77,Nreal Light,main,1920,1080,52,46.06028135852121,41.684504379276824,small_fov,diagonal,birdbath,False,41.98703409644038
+78,Nubia Neovision Glass,main,1920,1080,43,43.0,44.651162790697676,small_fov,unspecified,birdbath,False,52.0
+79,NuEyes Pro 3e,main,1920,1080,46,46.0,41.73913043478261,small_fov,unspecified,birdbath,False,48.60869565217391
+80,Oculus Go,main,1280,1440,89.3,89.3,14.33370660694289,fresnel,horizontal,fresnel,False,15.022225264918312
+81,Oculus Quest,main,1440,1600,94.2,94.2,15.286624203821656,fresnel,horizontal,fresnel,False,16.020916196144967
+83,Oculus Rift,main,1080,1200,87.9,87.9,12.286689419795222,fresnel,horizontal,fresnel,False,12.876879741270102
+84,Oculus Rift S,main,1280,1440,90.6,90.6,14.128035320088301,fresnel,horizontal,fresnel,False,14.806674571271582
+85,P&C Solution METALENSE,main,1920,1080,40,40.0,48.0,small_fov,unspecified,prism,False,55.9
+91,Pico G2,main,1440,1600,101,101.0,14.257425742574258,fresnel,unspecified,fresnel,False,16.33663366336634
+92,Pico G2 4K,main,1920,2160,101,101.0,19.00990099009901,fresnel,unspecified,fresnel,False,21.782178217821784
+93,Pico G2 4K Enterprise,main,1920,2160,101,101.0,19.00990099009901,fresnel,unspecified,fresnel,False,21.782178217821784
+94,Pico G3,main,1832,1920,98,98.0,18.693877551020407,fresnel,unspecified,fresnel,False,21.420068027210885
+95,Pico Goblin,main,1280,1440,92,92.0,13.91304347826087,aspheric,horizontal,aspheric,False,21.980676328502415
+96,Pico Neo 2,main,1920,2160,101,101.0,19.00990099009901,fresnel,unspecified,fresnel,False,21.782178217821784
+97,Pico Neo 2 Eye,main,1920,2160,101,101.0,19.00990099009901,fresnel,unspecified,fresnel,False,21.782178217821784
+98,Pico Neo 3,main,1832,1920,98,98.0,18.693877551020407,fresnel,unspecified,fresnel,False,21.420068027210885
+99,Pico Neo 3 Link,main,1832,1920,98,98.0,18.693877551020407,fresnel,unspecified,fresnel,False,21.420068027210885
+100,Pico Neo 3 Pro,main,1832,1920,98,98.0,18.693877551020407,fresnel,unspecified,fresnel,False,21.420068027210885
+101,Pico Neo 3 Pro Eye,main,1832,1920,98,98.0,18.693877551020407,fresnel,unspecified,fresnel,False,21.420068027210885
+102,Pimax 4K,main,1920,2160,110,110.0,17.454545454545453,aspheric,horizontal,aspheric,False,27.575757575757574
+103,Pimax 5K Plus,main,2560,1440,150,150.0,17.066666666666666,fresnel,horizontal,fresnel,False,17.88646288209607
+104,Pimax 5K Super,main,2560,1440,150,150.0,17.066666666666666,fresnel,horizontal,fresnel,False,17.88646288209607
+105,Pimax 5K XR,main,2560,1440,150,150.0,17.066666666666666,fresnel,horizontal,fresnel,False,17.88646288209607
+106,Pimax Artisan,main,1700,1440,130,130.0,13.076923076923077,fresnel,horizontal,fresnel,False,13.705072220356064
+113,Pimax Vision 8K+,main,3840,2160,170,170.0,22.58823529411765,fresnel,horizontal,fresnel,False,23.673259696891858
+116,PlayStation VR,main,960,1080,100,100.0,9.6,aspheric,unspecified,aspheric,False,15.166666666666666
+117,PlayStation VR2,main,2000,2040,110,110.0,18.181818181818183,fresnel,unspecified,fresnel,False,20.83333333333334
+121,RayNeo Air 4 Pro,main,1920,1080,46,46.0,41.73913043478261,small_fov,unspecified,birdbath,False,48.60869565217391
+124,RayNeo X3 Pro,main,640,480,30,24.197582045640598,26.448923648356903,small_fov,diagonal,waveguide,False,26.42962962962963
+125,Razer OSVR HDK 2,main,1080,1200,110,87.38561699164991,12.359013269920597,aspheric,diagonal,aspheric,False,19.525524436853722
+127,Rokid Air,main,1920,1080,43,43.0,44.651162790697676,small_fov,unspecified,birdbath,False,52.0
+128,Rokid Air Pro,main,1920,1080,43,43.0,44.651162790697676,small_fov,unspecified,birdbath,False,52.0
+129,Rokid Glass 2,main,1280,720,40,40.0,32.0,small_fov,unspecified,waveguide,False,37.266666666666666
+131,Rokid Max 2,main,1920,1200,50,50.0,38.4,small_fov,unspecified,birdbath,False,45.96336789368859
+132,Samsung Galaxy XR,main,3552,3840,109,109.0,32.58715596330275,pancake,horizontal,pancake,False,42.62264690009841
+133,Samsung Odyssey,main,1440,1600,110,110.0,13.090909090909092,fresnel,unspecified,fresnel,False,15.000000000000004
+134,Samsung Odyssey+,main,1440,1600,110,110.0,13.090909090909092,fresnel,unspecified,fresnel,False,15.000000000000004
+135,Sharp Xrostella VR1,main,2160,2160,90,90.0,24.0,pancake,unspecified,pancake,False,28.125
+136,Skyworth Pancake 1,main,2280,2280,105,105.0,21.714285714285715,pancake,unspecified,pancake,False,25.446428571428573
+137,Skyworth Pancake 1C,main,1600,1600,105,105.0,15.238095238095237,pancake,unspecified,pancake,False,17.857142857142858
+138,Skyworth Pancake 1Pro,main,2280,2280,105,105.0,21.714285714285715,pancake,unspecified,pancake,False,25.446428571428573
+139,Snap Spectacles (2021),main,480,564,26.3,17.220443469671707,27.87384661988329,small_fov,diagonal,waveguide,False,27.909581787163194
+141,Spacetop,main,1920,1080,53,46.97485988015452,40.87292660155742,small_fov,diagonal,birdbath,False,41.19482590594151
+143,StarVR One,main,1830,1464,129.1,129.1,14.175058094500388,fresnel,horizontal,fresnel,False,14.855956081572458
+144,Steam Frame,main,2160,2160,110,110.0,19.636363636363637,pancake,horizontal,pancake,False,25.68354828562441
+147,ThirdEye Razor MR Glasses,main,1920,1080,43,43.0,44.651162790697676,small_fov,unspecified,birdbath,False,52.0
+148,Thunderbird Air Plus,main,1920,1080,49,49.0,39.183673469387756,small_fov,unspecified,birdbath,False,45.63265306122449
+149,Tilt Five,main,1280,720,110,110.0,11.636363636363637,small_fov,unspecified,beam_steering_lenses,False,13.55151515151515
+150,TQSKY T1,main,1920,1080,43,37.89702287969673,50.66361033411511,small_fov,diagonal,birdbath,False,50.7750179770907
+151,Valve Index,main,1440,1600,108,108.0,13.333333333333334,fresnel,horizontal,fresnel,False,13.973799126637555
+160,VITURE Beast,main,1920,1200,58,50.352036155526385,38.13152648027066,small_fov,diagonal,prism,False,38.690166297905705
+161,Viture Luma,main,1920,1200,50,50.0,38.4,small_fov,unspecified,birdbath,False,45.96336789368859
+162,Viture Luma Pro,main,1920,1200,52,52.0,36.92307692307692,small_fov,unspecified,birdbath,False,44.195546051623644
+163,Viture Luma Ultra,main,1920,1200,52,52.0,36.92307692307692,small_fov,unspecified,birdbath,False,44.195546051623644
+167,VRgineers VRHero 5K,main,2560,1440,170,168.5357132636308,15.189658918140026,aspheric,diagonal,aspheric,False,23.9975514158115
+168,VRgineers VRHero 5K Plus,main,2560,1440,170,168.5357132636308,15.189658918140026,aspheric,diagonal,aspheric,False,23.9975514158115
+169,VRgineers XTAL,main,2560,1440,170,168.5357132636308,15.189658918140026,aspheric,diagonal,aspheric,False,23.9975514158115
+170,VRgineers XTAL 8K,main,3840,2160,150,150.0,25.6,aspheric,horizontal,aspheric,False,40.44444444444445
+171,Vuzix M400C,main,640,360,16.8,14.667653645464249,43.633427368112855,small_fov,diagonal,eyepiece_optics,False,43.31995581378769
+173,Xiaomi Mi VR,main,1280,1440,94,94.0,13.617021276595745,fresnel,horizontal,fresnel,False,14.271114001672396
+174,Xiaomi Smart Glasses,main,640,480,29,23.378465363420403,27.375620685581406,small_fov,diagonal,waveguide,False,27.34099616858237
+175,Ximmerse Rhino X Pro,main,2160,2160,70,70.0,30.857142857142858,small_fov,horizontal,curved_mirrors,False,30.58285714285714
+176,Xreal 1S,main,1920,1200,52,52.0,36.92307692307692,small_fov,unspecified,birdbath,False,44.195546051623644
+180,XREAL AURA,main,1920,1200,70,61.40154662753024,31.269570645296113,small_fov,diagonal,prism,False,32.057566361121864
+181,Xreal One,main,1920,1080,50,50.0,38.4,small_fov,unspecified,birdbath,False,44.72
+182,Xreal One Pro,main,1920,1080,57,57.0,33.68421052631579,small_fov,unspecified,prism,False,39.228070175438596
+183,XRSpace Manova,main,1440,1440,100,100.0,14.4,fresnel,horizontal,fresnel,False,15.091703056768559
+185,YVR 2,main,1600,1600,103,103.0,15.533980582524272,pancake,unspecified,pancake,False,18.203883495145632
+186,TCL RayNeo X2 Lite,main,640,480,30,24.197582045640598,26.448923648356903,small_fov,diagonal,waveguide,False,26.42962962962963
+188,Immersed Visor,main,3552,3840,100,100.0,35.52,pancake,unspecified,pancake,False,41.62500000000001
+189,Nimo,main,1280,720,26,22.754155391147275,56.25346131274099,small_fov,diagonal,waveguide,False,55.98271212858718
+190,QWR VRone PC,main,1832,1920,95,95.0,19.28421052631579,fresnel,horizontal,fresnel,False,20.210526315789473
+194,INMO Air2,main,640,400,26,22.15405285682451,28.88861934816813,small_fov,diagonal,waveguide,False,28.769610836904242
+195,RealWear Navigator 520,main,1280,720,24,24.0,53.333333333333336,small_fov,horizontal,four_element_optical_lens_assembly,False,52.85925925925926
+196,Vuzix Blade 2,main,480,480,19,19.0,25.263157894736842,small_fov,unspecified,waveguide,False,36.26421133609954
+197,Engo 2,main,304,256,10,7.6571713403843,39.70134485520638,small_fov,diagonal,projector_reflector,False,39.38990284355486
+198,Guangli Holoswim 2,main,128,64,25,25.0,5.12,small_fov,unspecified,waveguide,False,5.810326938836472
+199,INMO Air,main,640,400,26,26.0,24.615384615384617,small_fov,unspecified,waveguide,False,29.463697367749102
+200,OPPO Air Glass,main,640,480,28,22.560624058084425,28.368009606128822,small_fov,diagonal,waveguide,False,28.317460317460316
+201,Dream Glass Lead Plus,main,1920,1080,90,90.0,21.333333333333332,small_fov,unspecified,semi_reflective_combiner,False,24.844444444444445
+202,Cosmo Vision,main,304,256,10,7.6571713403843,39.70134485520638,small_fov,diagonal,semi_reflective_combiner,False,39.38990284355486
+203,RealWear Navigator 500,main,854,480,20,20.0,42.7,small_fov,unspecified,prism,False,49.71838061076813
+204,Engo Eyewear,main,304,256,10,7.6571713403843,39.70134485520638,small_fov,diagonal,semi_reflective_combiner,False,39.38990284355486
+205,DPVR P1 Pro Light,main,1280,1440,100,100.0,12.8,fresnel,unspecified,fresnel,False,14.66666666666667
+206,Nolo Sonic,main,1920,2160,101,101.0,19.00990099009901,aspheric,horizontal,aspheric,False,30.033003300330034
+207,Rokid X-Craft,main,1280,720,40,35.2009231664876,36.36268270425933,small_fov,diagonal,waveguide,False,36.38876288358167
+208,Vuzix Blade Upgraded,main,480,480,19,19.0,25.263157894736842,small_fov,unspecified,waveguide,False,36.26421133609954
+209,Julbo EVAD-1,main,304,256,10,7.6571713403843,39.70134485520638,small_fov,diagonal,mirror_and_lens_projector,False,39.38990284355486
+211,Shadow Creator Action One,main,1280,720,45,39.701030928623524,32.24097636913377,small_fov,diagonal,catadioptric,False,32.34556700762815
+212,ThirdEye X2,main,1280,720,42,42.0,30.476190476190474,small_fov,unspecified,waveguide,False,35.492063492063494
+213,RealWear HMT-1Z1,main,854,480,20,20.0,42.7,small_fov,unspecified,lens_optics,False,49.71838061076813
+214,RealWear HMT-1,main,854,480,20,20.0,42.7,small_fov,unspecified,lens_optics,False,49.71838061076813
+216,Razer OSVR HDK 1.4,main,960,1080,100,100.0,9.6,aspheric,unspecified,aspheric,False,15.166666666666666
+236,QWR VRone 4K Gen 2,main,1832,1920,94,94.0,19.48936170212766,fresnel,unspecified,fresnel,False,22.331560283687946
+240,Shiftall MeganeX superlight 8K (SVP-VGC3B),main,3552,3840,95,95.0,37.38947368421053,pancake,horizontal,pancake,False,48.90387907484976
+242,Brilliant Labs Frame,main,640,400,20,17.008292096025606,37.62870465692151,small_fov,diagonal,prism,False,37.40049408797552
+244,Lynx R1,main,1600,1600,90,90.0,17.77777777777778,other_vr,horizontal,freeform_prism,False,18.631732168850075
+246,TCL NXTWEAR V,main,2280,2280,108,108.0,21.11111111111111,pancake,unspecified,pancake,False,24.739583333333332
+252,DigiLens Argo,main,1280,720,30,26.290281514472927,48.68719261508683,small_fov,diagonal,waveguide,False,48.51835051144222
+253,Pimax Portal View,main,1920,2160,100,76.74140365980274,25.019088893805296,aspheric,diagonal,aspheric,False,39.52668557875489
+259,Canon MREAL X1,main,1920,2160,58,58.0,33.10344827586207,pancake,horizontal,pancake,False,43.29793580718292
+262,MAD Gaze Wave,main,1920,1080,40,35.2009231664876,54.54402405638899,small_fov,diagonal,waveguide,False,54.583144325372494
+263,Dream Glass Lead Pro,main,1920,1080,90,90.0,21.333333333333332,small_fov,unspecified,freeform,False,24.844444444444445
+264,Skyworth W1 Pro,main,1600,1600,91.5,91.5,17.48633879781421,pancake,unspecified,pancake,False,20.491803278688526
+268,Nolo X1,main,1280,1440,96,96.0,13.333333333333334,fresnel,horizontal,fresnel,False,13.973799126637555
+269,Canon MREAL S1,main,1600,1200,45,45.0,35.55555555555556,pancake,horizontal,pancake,False,46.50519031141869
+270,Skyworth W1,main,1600,1600,94,74.34457022279072,21.52141030885281,pancake,diagonal,pancake,False,28.1491110614061
+271,Vuzix M4000,main,854,480,28,24.524913796635275,34.821732996964315,small_fov,diagonal,waveguide,False,34.676533919005344
+272,ClassVR Premium,main,1280,1440,100,100.0,12.8,fresnel,unspecified,hybrid_fresnel_aspheric,False,14.66666666666667
+273,Realmax Qian,main,1280,768,119.5,119.5,10.711297071129707,small_fov,unspecified,birdbath,False,12.679061876042335
+277,Vuzix M400,main,640,360,16.8,14.667653645464249,43.633427368112855,small_fov,diagonal,eyepiece_optics,False,43.31995581378769
+281,3Glasses X1,main,1200,1200,105,105.0,11.428571428571429,pancake,horizontal,pancake,False,14.94809688581315
+284,Asus HC102,main,1440,1440,95,95.0,15.157894736842104,fresnel,horizontal,hybrid_fresnel_aspheric,False,15.886003217651114
+285,3Glasses Blubur S2,main,1440,1440,90,90.0,16.0,fresnel,unspecified,fresnel,False,18.333333333333336
+290,ClassVR,main,1280,1440,100,100.0,12.8,aspheric,unspecified,aspheric,False,20.222222222222225
+291,DPVR E3C,main,1280,1440,110,110.0,11.636363636363637,fresnel,unspecified,fresnel,False,13.333333333333336
+292,DPVR E3B,main,1280,1440,110,110.0,11.636363636363637,fresnel,horizontal,fresnel,False,12.195315601429138
+299,Roscosmos XR-2,main,2880,2880,157,147.89630002080258,19.47310378687573,fresnel,diagonal,hybrid_fresnel,False,20.408493051747488
+55,Iristick G2,missing,426,240,12,12.0,35.5,small_fov,horizontal,small_fov,False,35.184444444444445
+193,RealWear Navigator Z1,missing,1280,720,24,24.0,53.333333333333336,small_fov,horizontal,small_fov,False,52.85925925925926
+226,Sony PUD-J5A,missing,827,228,25,25.0,33.08,small_fov,horizontal,small_fov,False,32.78595555555555
+237,QWR VRone Pro,missing,1600,1600,95,75.31270129244217,21.244756495815192,pancake,diagonal,pancake,False,27.787259361308454
+241,Nolo Sonic 2,missing,1832,1920,92,71.11892427621952,25.75966971722852,fresnel,diagonal,fresnel,False,26.99703376478098
+243,Brilliant Monocle,missing,640,400,20,17.008292096025606,37.62870465692151,small_fov,diagonal,prism,False,37.40049408797552
+254,Pimax Portal QLED View,missing,1920,2160,100,76.74140365980274,25.019088893805296,aspheric,diagonal,aspheric,False,39.52668557875489
+257,Vuzix Shield,missing,640,480,30,24.197582045640598,26.448923648356903,small_fov,diagonal,waveguide,False,26.42962962962963
+258,Lenovo Legion VR700,missing,1832,1920,93,72.06866887328194,25.420200326180556,fresnel,diagonal,fresnel,False,26.641257983770014
+260,VRgineers XTAL 3,missing,3840,2160,140,140.0,27.428571428571427,other_vr,horizontal,non_fresnel,False,28.74610106051154
+266,XYZ Atom,missing,1280,720,40,35.2009231664876,36.36268270425933,small_fov,diagonal,waveguide,False,36.38876288358167
+278,DPVR E3 4K,missing,1920,2160,110,110.0,17.454545454545453,fresnel,unspecified,fresnel,False,20.0
+286,MAD Gaze Vader,missing,1280,720,45,45.0,28.444444444444443,small_fov,unspecified,small_fov,False,33.12592592592593
+288,ANTVR Cyclop,missing,1080,1200,110,110.0,9.818181818181818,fresnel,unspecified,fresnel,False,11.250000000000002
+295,DPVR M2 Pro,missing,1280,1440,96,96.0,13.333333333333334,aspheric,horizontal,aspheric,False,21.064814814814817
+296,Nolo VR Glass,missing,2280,2280,92,92.0,24.782608695652176,pancake,unspecified,pancake,False,29.042119565217394
+298,Diver-X HalfDive,missing,1600,1440,134,134.0,11.940298507462687,aspheric,horizontal,aspheric,False,18.86401326699834
+300,DecaGear,missing,2160,2160,114,114.0,18.94736842105263,fresnel,horizontal,hybrid_fresnel_aspheric,False,19.857504022063893
+217,3Glasses D2,historical,1280,1440,110,110.0,11.636363636363637,aspheric,unspecified,aspheric,False,18.383838383838384
+218,Oculus Rift DK2,historical,960,1080,93,93.0,10.32258064516129,aspheric,horizontal,aspheric,False,16.308243727598565
+219,Oculus Rift DK1,historical,640,800,90,90.0,7.111111111111111,aspheric,horizontal,aspheric,False,11.234567901234568
+220,Google Glass Explorer Edition,historical,640,360,14.837300120226933,12.94918139359503,49.42397365107257,small_fov,diagonal,prism,False,49.05038327555931
+221,Carl Zeiss Cinemizer OLED,historical,870,500,30,30.0,29.0,small_fov,unspecified,prism,False,33.95060504877105
+222,Vuzix iWear VR920,historical,640,480,32,32.0,20.0,small_fov,unspecified,aspheric,False,25.37555860690745
+224,eMagin Z800 3DVisor,historical,800,600,40,32.46860426270301,24.639186628633972,small_fov,diagonal,prism,False,24.777777777777775
+225,NVIS nVisor SX60,historical,1280,1024,44,44.0,29.09090909090909,aspheric,horizontal,aspheric,False,45.95959595959596
+229,Virtual Research VR4,historical,247,230,48,48.0,5.145833333333333,aspheric,horizontal,aspheric,False,8.129701967592592
+231,Virtuality Visette 2,historical,378,244,60,60.0,6.3,aspheric,horizontal,aspheric,False,9.953125
+233,Virtual Research Flight Helmet,historical,360,240,93,93.0,3.870967741935484,aspheric,horizontal,aspheric,False,6.115591397849463
+234,VPL EyePhone,historical,320,240,108,108.0,2.962962962962963,fresnel,horizontal,fresnel,False,3.1052886948083454

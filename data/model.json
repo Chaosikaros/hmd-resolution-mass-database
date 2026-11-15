@@ -1,0 +1,210 @@
+{
+  "method": "SARC",
+  "mode": "axis",
+  "schema": 1,
+  "geometry": "frozen_small_fov_axis_proxy_v1",
+  "groups": {
+    "global": {
+      "log2_multiplier": 0.06768680751157459,
+      "median_interval": [
+        0.06768680751157459,
+        0.06768680751157459
+      ],
+      "n": 66,
+      "manufacturers": 21
+    },
+    "optics:aspheric": {
+      "log2_multiplier": 0.6597977336437463,
+      "median_interval": [
+        0.6597977336437463,
+        0.6597977336437463
+      ],
+      "n": 8,
+      "manufacturers": 3
+    },
+    "axis:aspheric:0": {
+      "log2_multiplier": 0.6597977336437463,
+      "median_interval": [
+        0.6597977336437463,
+        0.6597977336437463
+      ],
+      "n": 8,
+      "manufacturers": 3
+    },
+    "optics:focus": {
+      "log2_multiplier": -0.09310940439148147,
+      "median_interval": [
+        -0.09310940439148147,
+        -0.09310940439148147
+      ],
+      "n": 6,
+      "manufacturers": 1
+    },
+    "axis:focus:0": {
+      "log2_multiplier": -0.09310940439148147,
+      "median_interval": [
+        -0.09310940439148147,
+        -0.09310940439148147
+      ],
+      "n": 6,
+      "manufacturers": 1
+    },
+    "optics:fresnel": {
+      "log2_multiplier": 0.1963972128035036,
+      "median_interval": [
+        0.1963972128035036,
+        0.1963972128035036
+      ],
+      "n": 7,
+      "manufacturers": 4
+    },
+    "axis:fresnel:0": {
+      "log2_multiplier": 0.06768680751157459,
+      "median_interval": [
+        0.06768680751157459,
+        0.06768680751157459
+      ],
+      "n": 3,
+      "manufacturers": 2
+    },
+    "axis:fresnel:1": {
+      "log2_multiplier": 0.1963972128035036,
+      "median_interval": [
+        0.1963972128035036,
+        0.1963972128035036
+      ],
+      "n": 4,
+      "manufacturers": 2
+    },
+    "optics:pancake": {
+      "log2_multiplier": 0.27146302790437454,
+      "median_interval": [
+        0.27146302790437454,
+        0.27146302790437454
+      ],
+      "n": 18,
+      "manufacturers": 8
+    },
+    "axis:pancake:0": {
+      "log2_multiplier": 0.3873167417203939,
+      "median_interval": [
+        0.3873167417203939,
+        0.3873167417203939
+      ],
+      "n": 10,
+      "manufacturers": 4
+    },
+    "axis:pancake:1": {
+      "log2_multiplier": 0.22881869049588088,
+      "median_interval": [
+        0.22881869049588088,
+        0.22881869049588088
+      ],
+      "n": 8,
+      "manufacturers": 4
+    },
+    "optics:small_fov": {
+      "log2_multiplier": 0.0007155223717098309,
+      "median_interval": [
+        0.0007155223717098309,
+        0.0007155223717098309
+      ],
+      "n": 27,
+      "manufacturers": 11
+    },
+    "axis:small_fov:0": {
+      "log2_multiplier": -0.012881291296732409,
+      "median_interval": [
+        -0.012881291296732409,
+        -0.012881291296732409
+      ],
+      "n": 6,
+      "manufacturers": 5
+    },
+    "axis:small_fov:1": {
+      "log2_multiplier": 0.021511486643742316,
+      "median_interval": [
+        0.021511486643742316,
+        0.021511486643742316
+      ],
+      "n": 21,
+      "manufacturers": 8
+    }
+  },
+  "training_ids": [
+    9,
+    10,
+    11,
+    12,
+    15,
+    17,
+    18,
+    24,
+    48,
+    61,
+    64,
+    67,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    82,
+    86,
+    87,
+    88,
+    89,
+    90,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    114,
+    115,
+    118,
+    119,
+    120,
+    122,
+    123,
+    126,
+    130,
+    140,
+    142,
+    145,
+    146,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    164,
+    165,
+    166,
+    172,
+    177,
+    178,
+    179,
+    184,
+    187,
+    191,
+    192,
+    210,
+    235,
+    239,
+    250
+  ],
+  "residual_interval": {
+    "method": "leave_one_manufacturer_out",
+    "weighting": "equal_manufacturer_mean_squared_log2_residual",
+    "sigma_log2": 0.134031074895889,
+    "sigma_floor_log2": 0.1,
+    "normal_multiplier": 1.96,
+    "nominal_coverage": 0.95
+  }
+}

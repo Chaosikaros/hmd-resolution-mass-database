@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n data-en="Methods and data guide · HRMD" data-zh="方法与数据说明 · HRMD">Methods and data guide · HRMD</title>
+<link rel="icon" href="favicon.svg"><link rel="stylesheet" href="methods.css"></head>
+<body><div class="topbar"><nav aria-label="Main navigation" data-i18n-attrs="aria-label" data-en-aria-label="Main navigation" data-zh-aria-label="主导航"><a data-i18n data-en="← HRMD" data-zh="← HRMD 数据库" href="index.html">← HRMD</a><a data-i18n data-en="Contribute data and evidence" data-zh="提交数据与证据" href="contribute.html">Contribute data and evidence</a></nav><label for="language"><span data-i18n data-en="Language" data-zh="语言" >Language</span><select id="language" aria-label="Language" data-i18n-attrs="aria-label" data-en-aria-label="Language" data-zh-aria-label="语言"><option value="en">English</option><option value="zh">中文</option></select></label></div><header class="page-heading"><p class="eyebrow">HMD RESOLUTION AND MASS DATABASE</p><h1 data-i18n data-en="Methods and data guide" data-zh="方法与数据说明" >Methods and data guide</h1><p data-i18n data-en="How records are collected, how to read the datasets, and how to reproduce SARC estimates." data-zh="了解设备记录如何收集、数据字段如何解读，以及如何复现 SARC 估算。" class="intro">How records are collected, how to read the datasets, and how to reproduce SARC estimates.</p></header><div class="layout"><nav class="toc" aria-label="On this page" data-i18n-attrs="aria-label" data-en-aria-label="On this page" data-zh-aria-label="本页目录"><p data-i18n data-en="On this page" data-zh="本页目录" >On this page</p><a data-i18n data-en="Search and evidence collection" data-zh="资料检索与证据收集" href="#search">Search and evidence collection</a><a data-i18n data-en="Reading the CSV datasets" data-zh="CSV 数据字段说明" href="#fields">Reading the CSV datasets</a><a data-i18n data-en="SARC calculation and reproduction" data-zh="SARC 计算与复现" href="#sarc">SARC calculation and reproduction</a><a data-i18n data-en="Download datasets" data-zh="下载数据" href="index.html#downloads">Download datasets</a></nav><main><article><section id="search"><h2 data-i18n data-en="Search and evidence collection" data-zh="资料检索与证据收集" >Search and evidence collection</h2><div data-content-language="en" lang="en"><h3>Scope and record identity</h3>
+<p>HMD Resolution and Mass Database (HRMD) studies head-mounted displays through traceable online evidence.
+The main dataset covers complete records from 2016 to the current evidence
+cutoff. An all-years incomplete dataset retains devices with unresolved inputs.
+Complete pre-2016 devices have individual historical pages. Missing data remain missing.</p>
+<p>Start with the exact manufacturer, product name, hardware revision, regional
+variant and configuration. Keep distinct configurations separate when their
+display, optics or head-worn assembly differs. Resolve aliases with stable device
+IDs; do not combine specifications from similarly named products.</p>
+<h3>Search procedure</h3>
+<ol>
+<li>Search the exact model and relevant field in Google and Baidu. Useful query
+   patterns include <code>"MODEL" specifications</code>, <code>"MODEL" weight headband</code>,
+   <code>"MODEL" resolution per eye</code>, <code>"MODEL" horizontal field of view</code>,
+   <code>"MODEL" PPD</code>, and <code>"MODEL" weight resolution field of view optics</code>. Substitute the actual
+   device name and record the literal query actually used.</li>
+<li>Inspect matching manufacturer product pages, manuals, technical documents,
+   announcements and archived manufacturer pages first. Confirm model, version,
+   configuration, unit, axis and date before adopting a value.</li>
+<li>Once a matching official source sufficiently supports a field, use it.
+   Continue searching when it does not support the adopted scope or when equally
+   authoritative official sources conflict. Differences in lower-priority sources
+   do not automatically invalidate a sufficient matching official source.</li>
+<li>For official omissions, inspect traceable publications, contemporaneous
+   reporting, specialist databases, reviews and distributors. Record the actual
+   selection and its reason; do not impose an independent laboratory-measurement
+   requirement on ordinary catalogue fields.</li>
+<li>For an unresolved field, record actual queries, search-result screenshots,
+   inspected sources and the remaining gap. Distinguish no useful results from
+   connection errors, inaccessible pages, blank pages and CAPTCHA blocks. An
+   unsuccessful search does not establish that a value or source does not exist.</li>
+</ol>
+<h3>Capture and attribution</h3>
+<p>Load the actual source in a browser. Save the exact quotation or table location,
+source URL, relevant unhighlighted capture and a transparent highlighted view.
+Keep identifying model/configuration context and the relevant unit/axis visible.
+Do not reconstruct a source page from fetched text or use a search snippet as a
+substitute for a screenshot of the cited page.</p>
+<p>Record the actual capture or visit time and its basis. Reused captures keep their
+original timestamp; a packaging date is not a source visit. Preserve an archive
+copy and its SHA-256 fingerprint. The publication website uses compressed display
+copies with unchanged pixel dimensions, linked to those fingerprints. Where an
+existing record lacks a required capture, preserve that gap rather than declaring
+the evidence review complete.</p>
+<h3>Field interpretation and adoption</h3>
+<ul>
+<li>Weight describes the adopted head-worn configuration. Bare-headset mass does
+  not silently replace an assembly including straps/supports. Preserve ranges,
+  approximate values and strict or inclusive inequalities. A reported bound is
+  a threshold, not a measured mass;
+  see <a href="#fields">field definitions</a>.</li>
+<li>Preserve per-eye resolution, display structure and the source's meaning of
+  pixels. Multi-resolution displays can use a separately documented central
+  calibration region without replacing whole-device specifications.</li>
+<li>If a source does not specify FOV axis, the project defaults to horizontal;
+  if it does not specify PPD location, the project defaults to central. Record
+  these as project conventions, never as quotations from the source. Explicit
+  scope overrides a default. The SARC model retains the source-axis status as an
+  input; its geometric proxy assumptions are described separately.</li>
+<li>Adopt official PPD when available. Otherwise calculate SARC from documented,
+  compatible inputs. Third-party PPD remains in independent reference fields
+  with quotations and captures; it is not relabelled as a project estimate.</li>
+<li>Estimated, shared or qualified specifications may be used with their stated
+  rationale and limitations. Missing a field limits uses that depend on it; it does not automatically
+  remove the device from the catalogue.</li>
+<li>A score describes evidence support strength and the stated reason, not a
+  probability that a specification is objectively correct.</li>
+</ul>
+<h3>Review and update</h3>
+<p>For each adopted field, check model/configuration alignment, number, unit, axis,
+quotation-to-capture agreement, source priority, intended use and scoring reason.
+Record the decision and its supporting evidence.</p>
+<p>Contributors submit proposed field changes plus URLs, quotations and evidence
+through the website's GitHub Issue form. Maintainers inspect that proposal,
+document the adopted value and rationale, and update the database. Refit SARC when its official reference inputs or
+grouping change, then check dependent estimates, dataset exports, source links
+and checksums. </p></div><div data-content-language="zh" lang="zh-CN" hidden><h3>范围与设备识别</h3>
+<p>头戴式显示设备分辨率与质量数据库（HMD Resolution and Mass Database，HRMD）通过可追溯的网络证据记录 HMD。主集收录 2016 年至当前证据截点的完整记录；全年份缺数据辅助集保留输入尚不完整的设备；2016 年前的完整设备提供逐台历史页面。未知数据留空。</p>
+<p>首先确认厂商、完整型号、硬件版本、地区版本及配置。显示、光学或头戴组件不同的配置分别记录。通过稳定设备 ID 关联别名，不拼接名称相似产品的参数。</p>
+<h3>检索步骤</h3>
+<ol>
+<li>在 Google 和百度检索准确型号与所需字段。可使用 <code>"MODEL" specifications</code>、<code>"MODEL" weight headband</code>、<code>"MODEL" resolution per eye</code>、<code>"MODEL" horizontal field of view</code>、<code>"MODEL" PPD</code>、<code>"型号" 重量 分辨率 视场角 光学</code> 等检索式。替换为实际设备名称，记录真正使用的检索词。</li>
+<li>优先查阅匹配的厂商产品页、说明书、技术文档、公告及存档官网。采用前确认型号、版本、配置、单位、轴向和日期。</li>
+<li>匹配的官方来源充分支持该字段时，采用该来源。若来源不支持采用口径，或同等权威的官方来源存在矛盾，则继续核查。低优先级来源的不同数字不会自动推翻充分且匹配的官方依据。</li>
+<li>官方缺项时，查阅可追溯的出版物、同期报道、专业数据库、评测及经销商资料。记录实际采用依据及理由；普通目录字段不以获得独立实验室测量为前提。</li>
+<li>未解决的字段记录实际检索词、结果页截图、查阅来源与剩余缺口。区分无有效结果、连接故障、页面不可达、空白页及验证码阻挡。检索未果不证明该数值或来源不存在。</li>
+</ol>
+<h3>取证与来源归属</h3>
+<p>在浏览器中加载实际来源页面，保存准确引句或表格定位、来源 URL、相关原始截图及透明高亮图。截图保留能识别型号和配置的上下文，以及有关单位和轴向。不用抓取文本重建来源页面，也不用搜索摘要代替被引用页面的截图。</p>
+<p>记录实际截图或访问时间及其依据；复用截图保留原始时间，打包日期不作为访问时间。保存归档副本及 SHA-256 指纹。网站使用像素尺寸不变的压缩展示副本，并关联原文件指纹。既有记录缺少必要截图时，如实保留缺口，不宣称证据审核完成。</p>
+<h3>字段解释与采用</h3>
+<ul>
+<li>质量对应采用的头戴配置。裸机质量不会直接替换包含头带或支承组件的整机质量。保留范围、近似值及严格或含等号的不等式。来源报告的界限是阈值，不是实测质量，详见<a href="#fields">字段说明</a>。</li>
+<li>保留每眼分辨率、显示结构及来源对像素的定义。多分辨率显示可以独立记录匹配的中央校准区域，不替换整机参数。</li>
+<li>来源未注明 FOV 轴向时，项目默认横向；未注明 PPD 空间位置时，默认中心。明确标记这些是项目约定，不冒称来源原话。来源明确口径优先于默认。SARC 保留来源轴向状态作为输入，其几何代理假设另行说明。</li>
+<li>有匹配的官方 PPD 时优先采用；否则使用有记录且兼容的输入计算 SARC。第三方 PPD 及其引句、截图保留在独立参考字段中，不改标签冒充项目估算。</li>
+<li>估计、共享或附带限定的参数可以在注明理由和限制后采用。字段缺口只限制依赖该字段的用途，不自动删除目录中的设备。</li>
+<li>评分及其理由表示证据支持强度，不表示某个参数客观正确的概率。</li>
+</ul>
+<h3>审核与更新</h3>
+<p>逐字段核对型号与配置、数值、单位、轴向、引句与截图是否对应、来源优先级、用途及评分理由，记录采用决定和支持证据。</p>
+<p>贡献者通过网站的 GitHub Issue 表单提交字段修改建议、URL、引句及证据。维护者核查后记录采用值和理由，更新数据库。官方参考输入或分组变化时重新拟合 SARC，并检查受影响的估算值、数据导出、来源链接和校验和。</p></div></section><section id="fields"><h2 data-i18n data-en="Reading the CSV datasets" data-zh="CSV 数据字段说明" >Reading the CSV datasets</h2><div data-content-language="en" lang="en"><p>The main and incomplete CSV files retain specifications and their field-level
+evidence, including quotations, URLs, capture links and adoption rationales.
+Missing values are empty.</p>
+<p>Downloads use UTF-8 CSV. The website language selects English or Chinese
+descriptions; column names and machine-readable codes stay the same. Device
+names, source quotations and literal source section titles retain their original wording. Project-written locator explanations follow the selected language.</p>
+<h3>Mass</h3>
+<p>Read <code>mass_point_g</code> together with <code>mass_value_kind</code>, <code>mass_bound_inclusive</code>,
+<code>mass_scope</code> and the source quotation:</p>
+<ul>
+<li>For an exact, nominal or approximate value, it contains the adopted magnitude.</li>
+<li>For an upper or lower bound, it contains the reported threshold.
+  <code>mass_bound_inclusive=true</code> denotes an inclusive bound; <code>false</code> denotes a strict
+  inequality. The threshold is not a measurement of the actual mass.</li>
+<li>For a finite range, the lower and upper limits are retained separately. The
+  value kind and field rationale identify the adopted coordinate, such as a
+  midpoint or a reported configuration value.</li>
+</ul>
+<h3>PPD</h3>
+<p><code>ppd_working</code> is the adopted PPD, with its origin in <code>ppd_working_kind</code>: official
+when a matching manufacturer value is available, otherwise a project estimate.
+The main dataset's project estimates use SARC. The calculation and inputs are in
+<code>ppd_derivation</code>; incomplete records can retain an explicitly identified geometric
+fallback when SARC does not support the reported geometry. Missing required inputs
+remain missing.</p>
+<p><code>third_party_ppd_reference</code> and its evidence are reference information only. They
+do not replace adopted PPD and do not enter SARC calibration. Calibration uses
+compatible official references from the main dataset.</p>
+<p><code>ppd_estimate_low</code> and <code>ppd_estimate_high</code> are nominal 95% model-residual bounds for SARC estimates; <code>ppd_estimate_sigma_log2</code> is their log2 residual scale. They do not bound source-input uncertainty. See <a href="#sarc">SARC calculation</a> below. Official values and uncalibrated geometric fallbacks do not receive these intervals.</p>
+<h3>Geometry and year</h3>
+<p>Whole-headset resolution and FOV are distinct from any matched central display
+region used for PPD calibration. <code>ppd_calibration_region</code> records that geometry
+separately. When a source leaves PPD location or FOV axis unspecified, the project
+defaults to central PPD and horizontal FOV; source wording and explicit scope are
+preserved. The SARC guide explains how source-axis status enters its proxy.</p>
+<p>The recorded year may describe an announcement, demonstration or release.
+The year basis identifies the event; a documented
+announcement does not establish commercial availability.</p>
+<p>Source quotations, capture dates and evidence support scores describe the recorded
+evidence.</p></div><div data-content-language="zh" lang="zh-CN" hidden><p>主集和缺数据辅助集 CSV 保留设备参数及逐字段证据，包括引句、URL、截图链接和采用理由。缺失值留空。</p>
+<p>下载文件使用 UTF-8 CSV。网站语言决定项目说明采用英文还是中文；列名和机器可读代码保持一致。设备名称、来源引句及直接引用的来源章节标题保留原文；项目撰写的定位说明随所选语言显示。</p>
+<h3>质量</h3>
+<p>将 <code>mass_point_g</code> 与 <code>mass_value_kind</code>、<code>mass_bound_inclusive</code>、<code>mass_scope</code> 及来源引句一起阅读：</p>
+<ul>
+<li>精确值、标称值或近似值：保存采用的数值。</li>
+<li>上界或下界：保存来源报告的阈值。<code>mass_bound_inclusive=true</code> 表示包含等号，<code>false</code> 表示严格不等式。阈值并不等于实际质量的测量值。</li>
+<li>有限范围：分别保留下限和上限。数值类型和字段理由说明采用的坐标，例如中点或来源报告的特定配置值。</li>
+</ul>
+<h3>PPD</h3>
+<p><code>ppd_working</code> 是采用的 PPD，<code>ppd_working_kind</code> 记录其来源：有匹配的厂商值时采用官方值，否则为项目估算。主集的项目估算使用 SARC，计算和输入保存在 <code>ppd_derivation</code> 中。缺数据记录的几何条件不受 SARC 支持时，可以保留明确标注的几何回退。必要输入缺失时，估算留空。</p>
+<p><code>third_party_ppd_reference</code> 及其证据仅作为参考，不替换采用的 PPD，也不参与 SARC 校准。校准只使用主集中兼容的官方参考。</p>
+<p><code>ppd_estimate_low</code> 和 <code>ppd_estimate_high</code> 为 SARC 估算的名义 95% 模型残差界限；<code>ppd_estimate_sigma_log2</code> 为其 log2 残差尺度。这不限定来源输入的不确定性，计算见下方 <a href="#sarc">SARC 说明</a>。官方值和未经校准的几何回退值不使用这些区间。</p>
+<h3>几何参数与年份</h3>
+<p>整机分辨率与 FOV 区别于用于 PPD 校准的匹配中央显示区域，后者由 <code>ppd_calibration_region</code> 独立记录。来源未注明 PPD 位置或 FOV 轴向时，项目默认中心 PPD 和横向 FOV，同时保留来源原文及明确口径。SARC 部分说明来源轴向状态如何进入几何代理。</p>
+<p>记录年份可以对应公告、公开演示或发布事件。年份依据说明具体事件；有记录的公告不等于已商业发售。</p>
+<p>来源引句、取证日期和证据支持评分描述实际保存的证据。</p></div></section><section id="sarc"><h2 data-i18n data-en="SARC calculation and reproduction" data-zh="SARC 计算与复现" >SARC calculation and reproduction</h2><div data-content-language="en" lang="en"><p>Structure- and axis-aware robust calibration (SARC) estimates PPD from documented
+geometric inputs and official reference values. <code>sarc/model.py</code> implements fitting
+and prediction using NumPy and pandas. The included official
+references and prediction inputs allow the published PPD estimates to be recalculated.</p>
+<h3>Inputs</h3>
+<p><code>data/references.csv</code> contains the current 66 official main-dataset references
+across 21 manufacturer groups. Only these official values fit the model.
+<code>data/prediction_inputs.csv</code> contains current SARC estimate inputs, their cohort,
+stable ID and expected adopted value. Official values remain unchanged in the
+downloadable website datasets. Auxiliary/historical rows do not fit the model.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>device_id, name</td>
+<td>Stable catalogue identity</td>
+</tr>
+<tr>
+<td>cluster</td>
+<td>Manufacturer group used for calibration weights</td>
+</tr>
+<tr>
+<td>ppd_default</td>
+<td>Official training target; never an inference feature</td>
+</tr>
+<tr>
+<td>w_px, h_px</td>
+<td>Adopted per-eye or explicitly matched central-region pixel spans</td>
+</tr>
+<tr>
+<td>fov_default_deg</td>
+<td>Adopted angular span in degrees</td>
+</tr>
+<tr>
+<td>geometry_span_deg</td>
+<td>Resolved angular span used for qbase, with matching pixel axis</td>
+</tr>
+<tr>
+<td>qbase</td>
+<td>Resolved geometric pixel-per-degree proxy</td>
+</tr>
+<tr>
+<td>optics</td>
+<td>Calibration group; can differ from the physical optics description</td>
+</tr>
+<tr>
+<td>model_axis</td>
+<td>Source/effective axis status, including <code>unspecified</code></td>
+</tr>
+<tr>
+<td>physical_optics</td>
+<td>Retained physical structure description</td>
+</tr>
+<tr>
+<td>tiled_lens_array</td>
+<td>Architecture flag supported by device specifications</td>
+</tr>
+</tbody>
+</table></div>
+<p>Prepared inputs make the adopted geometry inspectable. For horizontal or
+unspecified-axis spans, qbase = w_px / FOV. For an explicit diagonal span D,
+horizontal span is 2 atan(tan(D/2) * w / sqrt(w²+h²)). For an explicit vertical
+span V, qbase = h_px / V directly. Convert degrees to radians for diagonal
+trigonometry, then back to degrees before dividing pixels. The diagonal conversion assumes a rectangular active
+area, square pixels and rectilinear projection. The six Varjo multi-resolution
+references use separately matched central-region inputs. Nonrectangular cases
+retain their effective source-reported axis spans and stated limitations.</p>
+<p>The SARC proxy q equals qbase, except for <code>small_fov</code> devices with
+<code>unspecified</code> or <code>diagonal</code> model axis: q = sqrt(w_px² + h_px²) / fov_default_deg.
+This is a model proxy and does not assert that the source explicitly reported a
+diagonal field of view. Explicit tiled lens arrays retain their resolved qbase.
+FOV spans must be positive and below 180 degrees for this prepared SARC API.</p>
+<h3>Calibration</h3>
+<p>For each training device i, calculate r_i = log2(official_PPD_i / q_i). Each
+manufacturer has equal total weight: a device in a group of n devices receives
+weight proportional to 1/n. Compute the weighted-median minimizer interval of r
+within each available group; the fitted offset is the interval midpoint.
+Integer weights and cumulative comparisons handle exact median ties.</p>
+<p>Offsets are fitted globally, by optical group, and by optical group crossed with
+whether the model axis is unspecified. For inference, select the most specific
+available offset: optical/axis group, optical group, then global fallback.</p>
+<p><code>estimated_PPD = q * 2**offset</code></p>
+<p>Tiled lens arrays return qbase directly. Manufacturer identifiers set fitting
+weights; they are not predictive features. No target is used to calculate an
+inference input.</p>
+<h3>Model-residual intervals</h3>
+<p>The displayed PPD interval describes model residuals. Leave out each manufacturer in turn, fit on the remaining official references, and calculate log2(predicted PPD / official PPD) for held-out devices. Average squared residuals within each manufacturer, then average those group means equally. The residual scale sigma is the square root of that mean, with a floor of 0.10 log2 units.</p>
+<p>The current sigma is 0.134031074895889. The nominal 95% interval is <code>[estimated_PPD / 2**(1.96*sigma), estimated_PPD * 2**(1.96*sigma)]</code>, a factor of approximately 1.19972. The 95% label uses a normal approximation; it does not guarantee coverage for individual devices or include input, axis, configuration or extrapolation uncertainty. This is distinct from the weighted-median minimizer interval used to select a fitted offset.</p>
+<h3>Run</h3>
+<p>From the repository root:</p>
+<pre><code class="language-sh">python -m pip install -r requirements.txt
+python -m sarc verify
+python -m sarc fit --output output/model.json
+python -m sarc predict --model output/model.json --output output/predictions.csv
+</code></pre>
+<p><code>fit</code> recalculates offsets and the residual scale from the official reference CSV. <code>predict</code> adds <code>sarc_prediction</code>, <code>ppd_estimate_sigma_log2</code>, <code>ppd_estimate_low</code> and <code>ppd_estimate_high</code> to the supplied prediction inputs. Alternate input
+files can be passed with <code>--input</code>. <code>verify</code> checks the current fitted groups,
+training IDs, residual scale and predictions against the saved current state using tight numeric
+tolerances.</p>
+<p>Each published SARC derivation links to <code>data/model.json</code> relative to the
+repository root and records its SHA-256 fingerprint, fitted group and log2
+multiplier. Original source values, matching geometry and screenshots remain
+attached to the device record.</p>
+<p>The estimated PPD is a nominal geometry-based estimate, not a new measured or
+manufacturer-reported value. Source resolution, FOV, configuration and scope
+uncertainties are not removed by calibration. Third-party PPD values do not
+enter this calibration pool.</p></div><div data-content-language="zh" lang="zh-CN" hidden><p>结构与轴向感知的稳健校准（Structure- and axis-aware robust calibration，SARC）使用有记录的几何输入和官方参考值估算 PPD。<code>sarc/model.py</code> 基于 NumPy 和 pandas 实现拟合与预测。仓库提供官方参考和预测输入，可重新计算发布的 PPD 估算值。</p>
+<h3>输入</h3>
+<p><code>data/references.csv</code> 包含当前主集的 66 条官方参考，覆盖 21 个厂商组。只有这些官方值参与拟合。<code>data/prediction_inputs.csv</code> 保存当前 SARC 估算输入、所属数据集、稳定 ID 和预期采用值。网站下载数据中的官方值保持原值；辅助集和历史记录不参与拟合。</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>列名</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>device_id, name</td>
+<td>稳定的目录标识</td>
+</tr>
+<tr>
+<td>cluster</td>
+<td>决定校准权重的厂商组</td>
+</tr>
+<tr>
+<td>ppd_default</td>
+<td>官方拟合目标，不作为推理特征</td>
+</tr>
+<tr>
+<td>w_px, h_px</td>
+<td>采用的每眼像素跨度，或明确匹配的中央区域像素跨度</td>
+</tr>
+<tr>
+<td>fov_default_deg</td>
+<td>采用的视场角跨度，单位为度</td>
+</tr>
+<tr>
+<td>geometry_span_deg</td>
+<td>用于 qbase、与像素轴向匹配的解析角度跨度</td>
+</tr>
+<tr>
+<td>qbase</td>
+<td>解析后的几何像素每度代理值</td>
+</tr>
+<tr>
+<td>optics</td>
+<td>校准分组，可以与物理光学描述不同</td>
+</tr>
+<tr>
+<td>model_axis</td>
+<td>来源／有效轴向状态，包含 <code>unspecified</code></td>
+</tr>
+<tr>
+<td>physical_optics</td>
+<td>保留的物理结构描述</td>
+</tr>
+<tr>
+<td>tiled_lens_array</td>
+<td>设备规格支持的平铺透镜阵列标记</td>
+</tr>
+</tbody>
+</table></div>
+<p>预处理输入使采用的几何关系可检查。对于横向或未注明轴向的跨度，qbase = w_px / FOV。明确为对角线跨度 D 时，横向跨度为 2 atan(tan(D/2) × w / sqrt(w²+h²))。明确为纵向跨度 V 时，直接使用 qbase = h_px / V。对角线三角运算先将度转换为弧度，在用像素跨度除以角度前，再将角度转回度。该转换假设矩形有效显示区、正方形像素和直线投影。六条 Varjo 多分辨率参考采用独立匹配的中央区域输入；非矩形设备保留来源报告的有效轴向跨度及相应限制。</p>
+<p>SARC 的代理值 q 通常等于 qbase；但 <code>small_fov</code> 设备的 <code>model_axis</code> 为 <code>unspecified</code> 或 <code>diagonal</code> 时，q = sqrt(w_px² + h_px²) / fov_default_deg。这是模型代理关系，不表示来源明确报告了对角线 FOV。明确的平铺透镜阵列保留解析后的 qbase。此预处理 SARC 接口要求 FOV 跨度大于 0° 且小于 180°。</p>
+<h3>校准</h3>
+<p>对每条拟合设备 i，计算 r_i = log2(official_PPD_i / q_i)。每个厂商的总权重相等：同组有 n 台设备时，单台权重与 1/n 成正比。在每个可用组内计算 r 的加权中位数最小化区间，拟合偏移量取该区间的中点。整数权重和累计比较用于准确处理中位数并列。</p>
+<p>分别拟合全局偏移、光学组偏移，以及光学组与轴向是否未注明的交叉组偏移。推理时选择最具体的可用偏移：光学／轴向交叉组、光学组，最后回退到全局。</p>
+<p><code>estimated_PPD = q * 2**offset</code></p>
+<p>平铺透镜阵列直接返回 qbase。厂商标识只决定拟合权重，不作为预测特征；推理输入的计算不使用目标值。</p>
+<h3>模型残差区间</h3>
+<p>页面中的 PPD 区间描述模型残差。依次留出一个厂商，用其余官方参考拟合模型，对留出设备计算 log2(预测 PPD／官方 PPD)。先在各厂商内计算残差平方的平均值，再对各厂商均值等权平均。其平方根为残差尺度 sigma，下限设为 0.10（log2 单位）。</p>
+<p>当前 sigma 为 0.134031074895889。名义 95% 区间为 <code>[estimated_PPD / 2**(1.96*sigma), estimated_PPD * 2**(1.96*sigma)]</code>，即分别除以和乘以约 1.19972。95% 标记采用正态近似，不保证对单台设备的覆盖率，也不包含输入、轴向、配置和外推的不确定性。此区间区别于选择拟合偏移量时使用的加权中位数最小化区间。</p>
+<h3>运行</h3>
+<p>在仓库根目录执行：</p>
+<pre><code class="language-sh">python -m pip install -r requirements.txt
+python -m sarc verify
+python -m sarc fit --output output/model.json
+python -m sarc predict --model output/model.json --output output/predictions.csv
+</code></pre>
+<p><code>fit</code> 从官方参考 CSV 重新计算各组偏移和残差尺度；<code>predict</code> 在提供的预测输入中增加 <code>sarc_prediction</code>、<code>ppd_estimate_sigma_log2</code>、<code>ppd_estimate_low</code> 和 <code>ppd_estimate_high</code> 列并写入输出文件，可通过 <code>--input</code> 指定其他输入文件。<code>verify</code> 以严格数值容差检查当前拟合组、拟合 ID、残差尺度及预测值与保存的当前状态是否一致。</p>
+<p>每条发布的 SARC 推导记录关联相对于仓库根目录的 <code>data/model.json</code>，并记录其 SHA-256 指纹、拟合组及 log2 乘数。原始来源值、匹配的几何参数及截图仍关联于设备记录。</p>
+<p>估算 PPD 是基于几何的标称估算，不是新测得的值或厂商发布值。校准不会消除来源分辨率、FOV、配置和口径的不确定性。第三方 PPD 不进入该校准池。</p></div><p class="code-link"><a data-i18n data-en="GitHub · Code and inputs" data-zh="GitHub · 代码与输入" href="https://github.com/chaosikaros/hmd-resolution-mass-database">GitHub · Code and inputs</a></p></section></article></main></div><script src="i18n.js"></script><script src="methods.js"></script></body></html>
