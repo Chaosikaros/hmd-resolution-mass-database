@@ -4,6 +4,8 @@ HRMD collects head-mounted display specifications with field-level source links,
 quotations, screenshots and adoption rationales. The bilingual website lets readers
 inspect the evidence behind each value and propose additions or corrections.
 
+**[Browse the HRMD website](https://chaosikaros.github.io/hmd-resolution-mass-database/site/)**
+
 The evidence cutoff is **13 October 2026**. The database contains:
 
 | Collection | Records | Scope |
@@ -23,7 +25,6 @@ Third-party PPD values are retained as reference information only.
 - [Field definitions and interpretation](site/docs/DATA_FIELDS.md)
 - [Search and evidence collection](site/docs/SEARCH_METHOD.md)
 - [SARC equations, inputs and calculation](site/docs/SARC.md)
-- [Dataset checksums](site/release_manifest.json) · [Capture provenance](site/evidence_asset_manifest.json)
 
 The CSV files include specifications and field-level evidence. Device pages link
 each field to its sources and captures. Missing values remain empty; ranges, inequalities,
@@ -65,29 +66,6 @@ Use the website's **Contribute data and evidence** form or open a
 The form prepares an Issue; sign in to GitHub, attach source captures and review
 the proposal before submitting. Long proposals can be copied or downloaded as
 Markdown. See [CONTRIBUTING.md](CONTRIBUTING.md) for the required evidence.
-
-## Website maintenance
-
-The website is static and requires no build step. To host it with GitHub Pages,
-enable Issues and select **GitHub Actions** as the Pages source, then run the
-**Deploy HRMD** workflow. It validates the repository destination and deploys
-only `site/`.
-
-```sh
-python scripts/check_site.py
-python -m sarc verify
-node --test tests/submission.test.cjs
-node tests/i18n.test.cjs
-```
-
-The `tests/` directory contains automated checks:
-
-- `i18n.test.cjs` checks both interface languages, device fields and source quotations.
-- `submission.test.cjs` checks contribution forms and GitHub Issue preparation.
-
-Source captures use compressed display copies with unchanged pixel dimensions.
-The capture manifest records their checksums and the original-image fingerprints;
-field records retain the source associations and actual capture dates.
 
 ## License
 
