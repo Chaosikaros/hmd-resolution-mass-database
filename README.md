@@ -18,6 +18,32 @@ The main dataset uses **66 official PPD values and 175 SARC estimates**. SARC is
 calibrated on those 66 official references, grouped into 21 manufacturer groups.
 Third-party PPD values are retained as reference information only.
 
+## Paper and citation
+
+HRMD and SARC are introduced in:
+
+**[WL-Headset Law: Projecting Future Headset Evolution from a Decade of Display and Mass Data](https://arxiv.org/abs/2611.20083)**
+
+### Abstract
+
+Tracking a decade of headset display and mass changes can inform forecasts. However, comparing headset resolution requires pixels per degree (PPD), which is often unreported and estimated using unclear assumptions. Therefore, we compile the open-source, evidence-linked HMD Resolution and Mass Database (HRMD) with 241 configurations from 2016–2026 and introduce structure- and axis-aware robust calibration (SARC) to estimate missing central PPD. Compared with official PPD, SARC reduces PPD estimation error from 14.8% for traditional geometric estimation to 3.2%. Based on HRMD, we introduce the Weight-Linked Headset Law (WL-Headset Law), which models PPD by year, mass, and category. The law reveals 7.4% annual PPD growth at fixed mass and category. Meanwhile, head-worn mass fell by 6.5% annually after category adjustment. At an eyeglass-like mass of 30 g, the law projects average central PPD of 60 (normal visual acuity) around 2035 and 120 (higher acuity) around 2044 if trends persist.
+
+### Citation
+
+If you use HRMD, SARC, or WL-Headset Law in your research, please cite this paper:
+
+```bibtex
+@misc{wang2026wlheadsetlaw,
+  title         = {{WL-Headset Law}: Projecting Future Headset Evolution from a Decade of Display and Mass Data},
+  author        = {Jialin Wang and Hai-Ning Liang},
+  year          = {2026},
+  eprint        = {2611.20083},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.HC},
+  url           = {https://arxiv.org/abs/2611.20083}
+}
+```
+
 ## Data and methods
 
 - [Main dataset — CSV](site/dataset_formal.csv)
