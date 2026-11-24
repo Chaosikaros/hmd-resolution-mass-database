@@ -34,7 +34,7 @@ If you use HRMD, SARC, or WL-Headset Law in your research, please cite this pape
 
 ```bibtex
 @misc{wang2026wlheadsetlaw,
-  title         = {{WL-Headset Law}: Projecting Future Headset Evolution from a Decade of Display and Mass Data},
+  title = "{WL-Headset Law}: Projecting Future Headset Evolution from a Decade of Display and Mass Data",
   author        = {Jialin Wang and Hai-Ning Liang},
   year          = {2026},
   eprint        = {2611.20083},
